@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import controller.dispatcher.FrontController;
-import controller.user.UserJoinController;
 import request.HttpRequest;
 
 class FrontControllerTest {
