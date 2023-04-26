@@ -1,8 +1,9 @@
-package controller;
+package controller.dispatcher;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
+import controller.Controller;
 import mapper.HandlerMapper;
 import mapper.MappingInfoRepository;
 import request.HttpRequest;

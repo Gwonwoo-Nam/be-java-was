@@ -1,7 +1,8 @@
-package controller;
+package controller.user;
 
 import annotation.MethodType;
 import annotation.RequestMapping;
+import controller.Controller;
 import request.HttpRequest;
 import response.HttpResponse;
 

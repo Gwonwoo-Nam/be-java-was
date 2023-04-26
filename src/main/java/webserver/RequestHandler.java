@@ -11,7 +11,7 @@ import java.net.Socket;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import controller.FrontController;
+import controller.dispatcher.FrontController;
 import request.HttpRequest;
 import request.HttpRequestBuilder;
 import response.HttpResponse;

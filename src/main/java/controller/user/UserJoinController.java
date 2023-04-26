@@ -1,9 +1,10 @@
-package controller;
+package controller.user;
 
 import java.util.Map;
 
 import annotation.MethodType;
 import annotation.RequestMapping;
+import controller.Controller;
 import db.Database;
 import model.User;
 import request.HttpRequest;

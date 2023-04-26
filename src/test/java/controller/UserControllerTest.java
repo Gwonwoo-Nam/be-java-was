@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import controller.user.UserJoinController;
 import db.Database;
 import model.User;
 import request.HttpRequest;

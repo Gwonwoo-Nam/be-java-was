@@ -1,10 +1,11 @@
-package controller;
+package controller.user;
 
 import java.util.Map;
 
 import annotation.ExceptionHandler;
 import annotation.MethodType;
 import annotation.RequestMapping;
+import controller.Controller;
 import db.Database;
 import exception.UserInfoException;
 import model.User;
