@@ -47,6 +47,10 @@ public class PoroTouch {
             StringBuilder blockBuilder = new StringBuilder();
 
             Object object = mv.getModelAttribute(blockAttrKey);
+            if (object == null) {
+                builder.replace(blockStartOpenTag, blockEndCloseTag, "");
+                continue;
+            }
             //타입이 리스트인 경우, 리스트 재귀인 경우
             if (object instanceof List) {
                 renderListRecursively(object, blockBuilder, builder.substring(blockFrom, blockTo));

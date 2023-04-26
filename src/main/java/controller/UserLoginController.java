@@ -16,6 +16,10 @@ import session.SessionDb;
 @RequestMapping(url = "/users/login")
 public class UserLoginController extends Controller {
 
+    @MethodType(value = "GET")
+    public String showForm(HttpRequest httpRequest, HttpResponse httpResponse) {
+        return "/user/login.html";
+    }
     @MethodType(value = "POST")
     public String login(HttpRequest httpRequest, HttpResponse httpResponse) {
         Map<String, String> params = HttpRequestUtils.parseQueryParams(httpRequest.getBody());

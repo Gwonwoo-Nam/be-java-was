@@ -54,6 +54,7 @@ public class Interceptor implements MethodInterceptor {
         //Home 아이콘에 비회원 Or 회원 ID를 표시해주는 기능
         httpResponse.setModelAttribute("loginedUserId", "비회원");
         if (!sessionId.isEmpty()) {
+            httpResponse.setModelAttribute("hasSession", new Boolean(true));
             String parsedSessionId = HttpRequestUtils.parseSessionId(sessionId.get());
 
             User loginedUser = SessionDb.getUserBySessionId(parsedSessionId);
@@ -66,6 +67,9 @@ public class Interceptor implements MethodInterceptor {
             }
 
             httpResponse.setModelAttribute("loginedUserId", loginedUser.getUserId());
+        }
+        else {
+            httpResponse.setModelAttribute("hasNoSession", new Boolean(true));
         }
     }
 }

@@ -19,6 +19,10 @@ public class UserJoinController extends Controller {
      * @param httpRequest
      * @return view
      */
+    @MethodType(value = "GET")
+    public String joinForm(HttpRequest httpRequest, HttpResponse httpResponse) {
+        return "/users/form.html";
+    }
 
     @MethodType(value = "POST")
     public String join(HttpRequest httpRequest, HttpResponse httpResponse) {
