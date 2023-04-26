@@ -59,7 +59,7 @@ public class PoroTouch {
                 //반복문 안에 다른 attribute가 오더라도 처리 가능
                 blockBuilder.append(builder.substring(blockFrom, blockTo));
 
-                renderStringTags(mv, blockBuilder);
+                renderBlockItem(blockBuilder, object);
                 builder.replace(blockStartOpenTag, blockEndCloseTag, blockBuilder.toString());
             }
         }
