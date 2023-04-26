@@ -20,11 +20,11 @@ public class UserListController extends Controller {
             String parsedSessionId = HttpRequestUtils.parseSessionId(sessionId.get());
 
             if (SessionDb.getUserBySessionId(parsedSessionId) == null) {
-                return "redirect:/user/login.html";
+                return "redirect:/users/login";
             }
         }
         else {
-            return "redirect:/user/login.html";
+            return "redirect:/users/login";
         }
             //유저 목록 조회
         if (!Database.getUserList().isEmpty()) {

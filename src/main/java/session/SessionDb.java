@@ -20,5 +20,9 @@ public class SessionDb {
         return sessionMap.get(sessionId);
     }
 
+    public static void invalidate(String sessionId) {
+        sessionMap.remove(sessionId);
+    }
+
 
 }
