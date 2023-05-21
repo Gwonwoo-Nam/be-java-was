@@ -78,7 +78,10 @@ ExceptionHandler와 handlerMapping 동작 흐름은 대강 위와 같다.
 
 - 인터셉터로 Controller 실행 전/후로 Logging 및 세션 확인 기능 제공
 
+- 세션, 로깅 인터셉터 기능 구현
+브라우저가 유효한 세션을 보내고 있는지 모든 페이지에서 확인해야하는데 이 로직을 분리하기 위해서 Proxy와 cglib을 학습 후 인터셉터를 구현
 
+[최종 PR](https://github.com/codesquad-members-2023/be-java-was/pull/95/files#diff-40fab5e966a2203abc899a20e2dec3a923d46ac03bbfc1678a66c88871738a1a)
 
 ### 1.3. 사용 기술
 #### Language
